@@ -1,1 +1,1 @@
-from app import CogniousApp
+from .app import CogniousApp

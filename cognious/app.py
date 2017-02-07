@@ -19,7 +19,7 @@ try:
 except:
     from urllib.parse import urlparse
 
-from utils import get_user_data_dir
+from .utils import get_user_data_dir
 
 logger = logging.getLogger('cognious')
 logger.handlers = []
