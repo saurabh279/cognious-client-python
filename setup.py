@@ -7,7 +7,7 @@ setup(
   author = 'Tarun Paul',
   author_email = 'tarunpaul@cognious.com',
   url = 'https://github.com/tarunpaul/cognious', # use the URL to the github repo
-  download_url = 'https://github.com/peterldowns/mypackage/tarball/0.1', # I'll explain this in a second
+  download_url = 'https://github.com/tarunpaul/cognious/tarball/0.1', # tarball
   keywords = ['cognious', 'api', 'machinelearning'], # arbitrary keywords
   license="Apache 2.0",
   classifiers = [],
