@@ -1,5 +1,6 @@
 import sys
 import os
+import mimetypes
 
 PY3 = sys.version_info[0] == 3
 
@@ -71,11 +72,10 @@ def user_data_dir(appname=None, appauthor=None, version=None, roaming=False):
         path = os.path.join(path, version)
     return path
 
+
 def get_user_data_dir(name=None):
     """ Get the application data dir as a string.
-
     name: an optional subdirectory within the cache
-
     """
     data_dir = user_data_dir('cognious')
     if name is not None:
@@ -85,3 +85,8 @@ def get_user_data_dir(name=None):
     except OSError:
         pass
     return data_dir
+
+
+def is_url_image(url):    
+    mimetype,encoding = mimetypes.guess_type(url)
+    return (mimetype and mimetype.startswith('image'))
